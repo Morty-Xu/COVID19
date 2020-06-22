@@ -13,7 +13,7 @@ class Covid19Pipeline(object):
     def __init__(self):
         now_time = datetime.datetime.now().strftime('%Y%m%d%H')
 
-        country_file_name = str(now_time) + 'country' + '.csv'
+        country_file_name = str(now_time) + '-' + 'country' + '.csv'
         self.country_file = open(country_file_name, 'a+', encoding='utf-8', newline='')
         self.country_writer = csv.writer(self.country_file)
 
